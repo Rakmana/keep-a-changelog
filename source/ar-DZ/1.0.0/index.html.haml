@@ -1,7 +1,7 @@
 ---
-description: Keep a Changelog
-title: Keep a Changelog
-language: ar
+description: أترك سجل للتغييرات
+title: أترك سجل للتغييرات
+language: ar-DZ
 version: 1.0.0
 ---
 
@@ -17,13 +17,19 @@ version: 1.0.0
 - gnustyle = "https://www.gnu.org/prep/standards/html_node/Style-of-Change-Logs.html#Style-of-Change-Logs"
 - gnunews = "https://www.gnu.org/prep/standards/html_node/NEWS-File.html#NEWS-File"
 
+<style>
+body,html,h1,h2,h3,h4,h5,h6,a{direction:rtl;text-align:right}
+div.frequently-asked-questions h4:after{float:left}
+pre {direction:ltr;text-align:left}
+</style>
+
 .header
   .title
-    %h1 Keep a Changelog
-    %h2 Don’t let your friends dump git logs into changelogs.
+    %h1 أترك سجلا للتغييرات
+    %h2 لا تدع أصدقاءك يستعملون سجلات جيت كمرجع للتغييرات.
 
   = link_to changelog do
-    Version
+    نسخة
     %strong= current_page.metadata[:page][:version]
 
   %pre.changelog= File.read("CHANGELOG.md")
@@ -31,7 +37,7 @@ version: 1.0.0
 .answers
   %h3#what
     %a.anchor{ href: "#what", aria_hidden: "true" }
-    What is a changelog?
+    ما هو سجل التغييرات؟
 
   %p
     A changelog is a file which contains a curated, chronologically
@@ -39,7 +45,7 @@ version: 1.0.0
 
   %h3#why
     %a.anchor{ href: "#why", aria_hidden: "true" }
-    Why keep a changelog?
+    لماذا نترك سجل للتغييرات؟
 
   %p
     To make it easier for users and contributors to see precisely what
@@ -48,7 +54,7 @@ version: 1.0.0
 
   %h3#who
     %a.anchor{ href: "#who", aria_hidden: "true" }
-    Who needs a changelog?
+    من يحتاج سجل التغييرات
 
   %p
     People do. Whether consumers or developers, the end users of
@@ -58,11 +64,11 @@ version: 1.0.0
 .good-practices
   %h3#how
     %a.anchor{ href: "#how", aria_hidden: "true" }
-    How do I make a good changelog?
+    كيف نصمم سجل جيد للتغييرات؟
 
   %h4#principles
     %a.anchor{ href: "#principles", aria_hidden: "true" }
-    Guiding Principles
+    المبادئ التوجيهية
 
   %ul
     %li
@@ -81,7 +87,7 @@ version: 1.0.0
       Mention whether you follow #{link_to "Semantic Versioning", semver}.
 
   %a.anchor{ href: "#types", aria_hidden: "true" }
-  %h4#types Types of changes
+  %h4#types أنواع التغييرات
 
   %ul
     %li
